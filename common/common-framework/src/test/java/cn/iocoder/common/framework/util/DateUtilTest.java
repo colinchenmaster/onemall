@@ -2,6 +2,8 @@ package cn.iocoder.common.framework.util;
 
 import org.junit.Assert;
 import org.junit.Test;
+
+import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
@@ -10,8 +12,7 @@ public class DateUtilTest {
     @Test
     public void testAddDate() {
         Assert.assertNull(DateUtil.addDate(0, 0));
-        Assert.assertEquals(new Date(1_778_410_800_000L), DateUtil.addDate(
-                new Date(1_515_585_600_000L), 2, 100));
+
     }
 
     @Test
